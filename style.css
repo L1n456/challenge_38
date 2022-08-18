@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+
+h1{
+    font-family: "poppins";
+    color: var(--Very-Dark-Cyan);
+    font-size: 35px;
+}
+
+p{
+    font-family: "open sans";
+}
+
+header{
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img{
+    width: 15%;
+}
+
+header button{
+    background-color: transparent;
+    color: var(--Pink);
+    border: 1px solid var(--Pink);
+    border-radius: 20px;
+    padding: 0.5% 2%;
+    font-family: "open sans"
+}
+
+header button:hover{
+    color: var(--Light-Pink);
+    border-color: var(--Light-Pink);
+    cursor: pointer;
+}
+
+main .top{
+    padding: 5%;
+    text-align: center;
+}
+
+
+main .top p{
+    font-size: 15px;
+    line-height: 1.5em;
+    padding: 0 30%;
+    margin: 2% 0;
+}
+
+main button{
+    background-color: var(--Pink);
+    border: 1px solid var(--Pink);
+    border-radius: 30px;
+    color: var(--Very-Pale-Blue);
+    font-family: "open sans";
+    font-weight: 600;
+    padding: 1.5% 8%;
+    box-shadow: 1px 3px 5px 3px rgb(222, 222, 222);
+}
+
+main button:hover{
+    background-color: var(--Light-Pink);
+    border-color: var(--Light-Pink);
+    cursor: pointer;
+}
+
+main .top img{
+    width: 80%;
+    margin: 5% auto;
+}
+
+main .flexs{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+main .flexs .flex{
+    display: flex;
+    flex-direction: column;
+}
+
+main .flexs .flex img{
+    width: 20%;
+}
+
+main .flexs .flex h1{
+    font-size: 70px;
+}
+
+main .flexs .flex p{
+    font-size: 15px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+main .grow{
+    background: url("images/bg-section-top-desktop-1.svg") 50% 0, url("images/bg-section-bottom-desktop-1.svg") 0 100%;
+    background-repeat: no-repeat;
+    padding: 10% 0;
+    margin-bottom: 5%;
+}
+
+main .grow .g-cont{
+    background-color: var(--Very-Pale-Blue);
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    padding: 5% 5% 0 5%;
+}
+
+main .g-cont .left p{
+    margin-top: 3%;
+    font-size: 14px;
+}
+
+main .g-cont img{
+    width: 50%;
+}
+
+main .flow{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    padding: 5%;
+}
+
+
+main .flow .right p{
+    margin-top: 3%;
+    font-size: 14px;
+}
+
+main .flow img{
+    width: 50%;
+}
+
+main .user{
+    background: url("images/bg-section-top-desktop-2.svg") 100% 0, url("images/bg-section-bottom-desktop-2.svg") 0 100%;
+    background-repeat: no-repeat;
+    padding: 10% 0;
+    margin-bottom: 5%;
+}
+
+main .user .u-cont{
+    background-color: var(--Very-Pale-Blue);
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    padding: 5% 5% 0 5%;
+}
+
+main .u-cont .left p{
+    margin-top: 3%;
+    font-size: 14px;
+}
+
+main .u-cont img{
+    width: 50%;
+}
+
+main .bottom{
+    text-align: center;
+    width: 70%;
+    margin: 5% auto;
+}
+
+main .bottom button{
+    margin-top: 5%;
+}
+
+footer{
+    padding-top: 12%;
+    background-image: url("images/bg-footer-top-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+footer .container{
+    background-color: var(--Very-Dark-Cyan);
+    display: flex;
+    gap: 10%;
+    padding: 5%;
+    color: var(--Very-Pale-Blue);
+}
+
+footer .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .logo path{
+    fill: white;
+}
+
+footer .left p{
+    margin: 3% 0;
+    padding-right: 30%;
+}
+
+footer .left .nbr, .mail{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+footer .left .logos{
+    width: 20%;
+    display: flex;
+    gap: 10%;
+    margin-top: 10%;
+}
+
+footer .left .logos svg path{
+    fill: var(--Very-Pale-Blue);
+}
+
+footer .logos svg:hover path{
+    fill: rgb(70, 176, 241);
+    cursor: pointer;
+}
+
+footer .right{
+    width: 50%;
+}
+
+footer .right h2{
+    font-family: "poppins";
+}
+
+footer .right .p{
+    margin: 3% 0;
+    padding-right: 25%;
+}
+
+footer .right input{
+    width: 65%;
+    padding: 2%;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    margin: 5% 10% 0 0;
+}
+
+footer .right button{
+    padding: 2% 5%;
+    background-color: var(--Pink);
+    border: 1px solid var(--Pink);
+    border-radius: 5px;
+    color: var(--Very-Pale-Blue);
+    font-family: "open sans";
+    font-weight: 600;
+}
+
+footer .error{
+    color: var(--Light-Red);
+    opacity: 0;
+}
+
+footer button:hover{
+    background-color: var(--Light-Pink);
+    border-color: var(--Light-Pink);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+    h1{
+        font-size: 25px;
+    }
+    
+    header{
+        padding: 5%;
+    }
+    
+    header img{
+        width: 40%;
+    }
+    
+    header button{
+        padding: 1% 5%;
+    }
+    
+    main .top{
+        padding: 5%;
+        margin-top: 10%;
+    }
+    
+    main .top p{
+        padding: 0%;
+        margin: 5% 0;
+    }
+    
+    main button{
+        margin: 10% 0;
+        padding: 3% 10%;
+    }
+    
+    main .top img{
+        width: 100%;
+        margin: 30% 0 25% 0;
+    }
+    
+    main .flexs{
+        width: 60%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    
+    main .flexs .flex{
+        margin-bottom: 50%;
+    }
+
+    .grow h1, .flow h1, .user h1{
+        font-size: 20px;
+    }
+    
+    main .grow{
+        background: url("images/bg-section-top-mobile-1.svg") 100% 0, url("images/bg-section-bottom-mobile-1.svg") 0 100%;
+        background-repeat: no-repeat;
+        padding: 27% 0 10% 0;
+        margin-bottom: 10%;
+    }
+    
+    main .grow .g-cont{
+        flex-direction: column-reverse;
+        padding: 10%;
+        text-align: center;
+    }
+    
+    main .g-cont .left p{
+        font-size: 13px;
+    }
+    
+    main .g-cont img{
+        width: 80%;
+        margin-bottom: 20%;
+    }
+    
+    main .flow{
+        flex-direction: column;
+        padding: 10%;
+        text-align: center;
+    }
+    
+    main .flow .right p{
+        font-size: 13px;
+    }
+    
+    main .flow img{
+        width: 80%;
+        margin-bottom: 20%;
+    }
+    
+    main .user{
+        background: url("images/bg-section-top-mobile-2.svg") 100% 0, url("images/bg-section-bottom-mobile-2.svg") 0 100%;
+        background-repeat: no-repeat;
+        padding: 20% 0;
+        margin-bottom: 5%;
+    }
+    
+    main .user .u-cont{
+        background-color: var(--Very-Pale-Blue);
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 10%;
+    }
+    
+    main .u-cont .left p{
+        font-size: 13px;
+    }
+    
+    main .u-cont img{
+        width: 80%;
+        margin-bottom: 20%;
+    }
+    
+    main .bottom button{
+        margin-top: 10%;
+    }
+    
+    footer{
+        padding-top: 14%;
+        background-image: url("images/bg-footer-top-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: 100% 0;
+    }
+    
+    footer .container{
+        flex-direction: column-reverse;
+        padding: 5%;
+        color: var(--Very-Pale-Blue);
+    }
+    
+    footer .left{
+        width: 100%;
+        margin-top: 20%;
+    }
+    
+    footer .left p{
+        margin: 3% 0;
+        padding-right: 0%;
+    }
+    
+    footer .left .logos{
+        width: 25%;
+        gap: 20%;
+        margin-top: 5%;
+    }
+    
+    footer .right{
+        width: 100%;
+    }
+    
+    footer .right .p{
+        font-size: 15.5px;
+        padding-right: 0%;
+    }
+    
+    footer .right input{
+        width: 100%;
+        margin: 5% 10% 5% 0;
+    }
+    
+    footer .right button{
+        padding: 3% 8%;
+        margin-left: 65%;
+    }
+    
+    footer .error{
+        margin-top: -10%;
+        color: var(--Light-Red);
+        opacity: 0;
+    }   
+}
